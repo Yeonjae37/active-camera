@@ -195,6 +195,5 @@ checkpoints/*.pt
 
 data/
 models/
-output/experiments/
 output/femto_bolt/
 pantilt_urdf
