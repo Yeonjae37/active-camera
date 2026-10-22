@@ -26,10 +26,7 @@ print("Original frames:", len(poses))
 print("Original FPS:", source_fps)
 
 # 2. Sample frames at 30 FPS
-frame_count = min(
-    int(DURATION * TARGET_FPS),
-    int(len(poses) / source_fps * TARGET_FPS),
-)
+frame_count = int(len(poses) / source_fps * TARGET_FPS)
 
 if frame_count < 2:
     raise RuntimeError("Motion sequence is too short")
