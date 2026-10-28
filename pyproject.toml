@@ -3,3 +3,11 @@ name = "active-camera"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+# src layout: `import biomechanics`, `import evaluation`, `import simulation` after `uv pip install -e . --no-deps`
+[tool.setuptools.packages.find]
+where = ["src"]
